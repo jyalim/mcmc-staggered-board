@@ -146,9 +146,10 @@ def profits(omega):
     return cp.log((1/theta-1)*q*O/beta)
 
 def normal_pdf(mu,sigx):
-    # sqrt(2*pi) = 2.50662827
+    # 1/sqrt(2*pi) = 0.39894228040143267794
     # WATCH FOR: cupy adoption of scipy.special.eval_hermite
-    return cp.exp(-(mu)*(mu)/(2*sigx*sigx))/(sigx*2.50662827)
+    inv_sig = 1/sigx
+    return cp.exp(-0.5*(mu*inv_sig)**2)*inv_sig*0.39894228040143267794
 
 def expcdf(x, lambdax):
     e=cp.maximum(1-cp.exp(-(1/lambdax)*x),0)
