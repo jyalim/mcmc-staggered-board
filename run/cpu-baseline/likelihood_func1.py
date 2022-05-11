@@ -21,7 +21,7 @@ print(p0.shape)
 if __name__ == '__main__':
     import sys
     N = int(sys.argv[1])
-    with Pool(processes=4) as pool:
+    with Pool(processes=16) as pool:
         sampler = emcee.EnsembleSampler(
           nwalkers, 
           ndim, 
@@ -37,11 +37,11 @@ if __name__ == '__main__':
 
 samples = sampler.get_chain()
 print(samples.shape)
-tau = sampler.get_autocorr_time()
-print(tau)
 flat_samples = sampler.get_chain(discard=0, flat=True)
 print(flat_samples.shape)
 pd.DataFrame(flat_samples).to_csv("results1.csv")
+tau = sampler.get_autocorr_time()
+print(tau)
 acceptance_fraction=sampler.acceptance_fraction
 print("Acceptance Rate is: ", acceptance_fraction)
 
