@@ -1,6 +1,12 @@
 CHANGES
 =======
 
+v0.1nsight
+----------
+* (PROF) made changes for the nsight profiler
+
+v0.1
+----
 * (OPT)          setting cupy allocator with rmm pool (~10x speedup)
 * (PATCH:logic)  ensuring numpy random seed also set
 * (PATCH:syntax) moved test case to `if __name__` block

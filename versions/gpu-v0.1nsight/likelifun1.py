@@ -2,6 +2,21 @@
 Created on Thu Sep  9 13:35:32 2021
 
 @author: sbharath
+
+Updated to v0.1 by:
+    Chaitanya Inumella
+    Jason Yalim
+at the SDSC 2022 May GPU Hackathon with mentors:
+    Oded Green
+    Huiwen Chu
+    Srivathsan Koundinyan
+
+Updated to v0.1nsight for profiling with nsight by:
+    Chaitanya Inumella
+at the SDSC 2022 May GPU Hackathon with mentors:
+    Oded Green
+    Huiwen Chu
+    Srivathsan Koundinyan
 """
 import os
 import numpy as np
