@@ -23,7 +23,3 @@ Files are under `versions/gpu-v0.1nsight/`
    nsys cmds documentation - https://docs.nvidia.com/nsight-systems/UserGuide/index.html#example-single-command-lines
 
 5. Open the output files(.qdrep) using the NightSight system UI and all the python profiling functions would be available under the NVTX section.
-
-Sample NSight Systems profiling outputs
----------------------------------------
-
