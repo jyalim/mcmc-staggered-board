@@ -1,0 +1,8 @@
+CHANGES
+=======
+
+* (OPT)          setting cupy allocator with rmm pool (~10x speedup)
+* (PATCH:logic)  ensuring numpy random seed also set
+* (PATCH:syntax) moved test case to `if __name__` block
+* (OPT)          reduced ops in value_function
+* (PATCH:logic)  catch autocorellation exceptions when chain is short
