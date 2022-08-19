@@ -1,2 +1,4 @@
 data/python_dta.csv
 **/*.csv
+**__pycache__
+**.ipynb_checkpoints
