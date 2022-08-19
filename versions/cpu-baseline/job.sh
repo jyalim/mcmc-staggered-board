@@ -12,4 +12,4 @@ module purge
 
 module load rapidsai/21.06
 
-python likelifun1.py
+python likelihood_func1.py
