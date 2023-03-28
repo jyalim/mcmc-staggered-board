@@ -1,7 +1,8 @@
 MCMC Staggered Board
 ====================
+This project was developed as part of the SDSC GPU Hackathon'22 and was presented at the Open ACC conference.
+The overview and pthe presentation can be found [here](https://github.com/jyalim/mcmc-staggered-board/blob/main/OpenACCSummit.pdf).
 
-TODO
 
 Profiling with NightSight Systems application
 ----------------------------------------------
